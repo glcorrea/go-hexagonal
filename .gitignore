@@ -1,0 +1,29 @@
+# Executáveis de Go
+# Ignora todos os executáveis criados pelo 'go build'
+*.exe
+*.test
+*.prof
+
+# Binários de Go para Linux, macOS, etc. (sem extensão)
+# O nome do binário geralmente é o nome do seu módulo/projeto.
+# Exemplo: /go/src/go-hexagonal
+/go-hexagonal
+
+# Arquivos de objetos
+*.o
+
+# Diretório de pacotes de cache
+# Usado pelo Go para compilar e armazenar pacotes
+/pkg/
+
+# Dependências gerenciadas pelo Go Modules (geralmente não deve ser ignorado, mas incluído por segurança)
+# A pasta 'vendor' é criada quando se usa 'go mod vendor'
+vendor/
+
+# Diretórios de IDEs comuns
+.vscode/
+.idea/
+
+# Arquivos de sistema e cache
+.DS_Store
+Thumbs.db
